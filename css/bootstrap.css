@@ -1,0 +1,441 @@
+:root {
+  --white: #ffffff;
+  --gray: #acacac;
+  --category: Bold 30px/36px Arial;
+  --smallCategory: Regular 20px/36px Arial;
+  --title: Bold 30px/36px Arial;
+  --context: 14px/21px Arial;
+}
+
+html {
+  background-color: #343434;
+}
+body {
+  margin: 0;
+  text-align: left;
+}
+
+#page-wrapper {
+  padding-left: 200px;
+}
+
+/*index*/
+#content {
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: center;
+  font-size: 13px;
+}
+
+#content2 {
+  display: flex;
+  justify-content: center;
+  font-size: 13px;
+}
+
+#content a {
+  margin-left: -3px;
+  text-decoration: none;
+}
+
+#content a:hover {
+  text-decoration: underline;
+}
+
+#content p {
+  margin-top: -15px;
+  color: aliceblue;
+  font-size: 26px;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  letter-spacing: 1.5px;
+}
+
+.project {
+  border: 0px;
+  border-radius: 3px;
+  margin: 0 0 10px 10px;
+  background-color: #ffffff00;
+  border: 0.5px solid #acacac;
+  font-size: 13px;
+  width: 120px;
+  height: 40px;
+  color: #5f6368;
+}
+
+.project:hover {
+  border: 0.5px solid white;
+  background: black;
+  color: #000000;
+  cursor: pointer;
+}
+
+.project a {
+  font-weight: bold;
+  font-size: 14px;
+  letter-spacing: 0.42px;
+  color: #ffffff;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* 사이드바 래퍼 스타일 */
+
+#sidebar-wrapper {
+  position: fixed;
+  width: 200px;
+  margin-left: -200px;
+  background: #484848 0% 0% no-repeat padding-box;
+  opacity: 1;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+#page-content-wrapper {
+  padding-top: 200px;
+  width: 1000px;
+}
+
+/* 사이드바 스타일 */
+
+.sidebar-nav {
+  width: 200px;
+  height: 3919px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  background: #484848 0% 0% no-repeat padding-box;
+}
+
+.sidebar-brand {
+  height: 30px;
+  padding-top: 50px;
+  margin-bottom: 50px;
+  left: 43px;
+  padding-bottom: 80px;
+}
+
+.sidebar-nav li {
+  padding-bottom: 20px;
+  text-indent: 43px;
+  height: 42px;
+  color: #ffffff;
+}
+
+.sidebar-nav li a {
+  text-align: left;
+  font-size: 18px;
+  letter-spacing: 0.6px;
+  color: #ffffff;
+  text-decoration: none;
+  opacity: 1;
+}
+
+.sidebar-nav dt {
+  padding-left: 50px;
+  height: 30px;
+  padding-top: 10px;
+  margin-bottom: 10px;
+}
+
+.sidebar-nav dt a {
+  text-align: left;
+  font-size: 18px;
+  letter-spacing: 0.6px;
+  color: #ffffff;
+  text-decoration: none;
+  cursor: pointer;
+  opacity: 1;
+}
+
+.sidebar-nav dd {
+  padding-left: 30px;
+  height: 30px;
+  padding-top: 8px;
+}
+
+.sidebar-nav dd a {
+  text-align: left;
+  font-size: 18px;
+  letter-spacing: 0.6px;
+  color: var(--gray);
+  cursor: pointer;
+  text-decoration: none;
+  opacity: 1;
+}
+
+/* 마우스 올려놨을 때 */
+.sidebar-nav li:hover {
+  color: #000000;
+  background: rgba(0, 0, 0, 0.1);
+}
+
+.sidebar-nav dt:hover {
+  color: #ffffff;
+  background: rgba(0, 0, 0, 0.1);
+}
+
+.sidebar-nav dd:hover {
+  color: #484848;
+  background: rgba(0, 0, 0, 0.2);
+}
+
+[tabindex="-1"]:focus {
+  outline: 0 !important;
+}
+/*속성 값이 -1인 경우는 반대로 탭을 눌렀을 때 포커스가 가는 엘리먼트에게 포커스를 잃게 할 수 있다.*/
+
+/*본문*/
+
+h1 {
+  padding-left: 150px;
+  margin-top: -100px;
+  text-align: left;
+  font: Bold 30px/36px Arial;
+  letter-spacing: 0.9px;
+  color: #ffffff;
+  opacity: 1;
+}
+
+h2 {
+  margin-left: 275px;
+  margin-top: -50px;
+  text-align: left;
+  font: 20px/36px Arial;
+  letter-spacing: 0.9px;
+  color: #ffffff;
+  opacity: 1;
+}
+
+video {
+  margin-left: 60px;
+  width: 390px;
+  height: 250px;
+  background: #ffffff 0% 0% no-repeat padding-box;
+  border: 1px solid #707070;
+  border-radius: 10px;
+  opacity: 1;
+  float: left;
+}
+
+.page-image {
+  margin-left: 60px;
+  width: 390px;
+  height: 250px;
+  background: #ffffff 0% 0% no-repeat padding-box;
+  border: 1px solid #707070;
+  border-radius: 10px;
+  opacity: 1;
+  float: left;
+}
+
+#text-content-wrapper {
+  width: 920px;
+  height: 310px;
+  padding-left: 80px;
+}
+
+h3 {
+  padding-top: 5px;
+  margin-left: 512px;
+  text-align: left;
+  font: Bold 20px/36px Arial;
+  letter-spacing: 0.6px;
+  color: #ffffff;
+  opacity: 1;
+}
+
+h4 {
+  margin-left: 512px;
+  margin-top: -14px;
+  padding-bottom: 20px;
+  margin-bottom: 10px;
+  text-align: left;
+  font: 14px/20px Arial;
+  letter-spacing: 0.42px;
+  color: #bdbdbd;
+  opacity: 1;
+}
+
+h5 {
+  margin-left: 690px;
+  margin-top: -30px;
+  width: 100px;
+  height: 30px;
+  background: #ffffff10 0% 0% no-repeat padding-box;
+  border: 1px solid #ffffff;
+  opacity: 1;
+  float: left;
+}
+
+h5 p {
+  margin-top: 6px;
+  text-align: center;
+  cursor: pointer;
+}
+
+h5 a {
+  text-align: center;
+  font-weight: lighter;
+  font-size: 14px;
+  letter-spacing: 0.42px;
+  color: #ffffff;
+  opacity: 1;
+  text-decoration: none;
+}
+
+h6 {
+  margin-left: 800px;
+  margin-top: -54px;
+  margin-right: 10px;
+  width: 100px;
+  height: 30px;
+  background: #ffffff35 0% 0% no-repeat padding-box;
+  border: 1px solid #ffffff;
+  opacity: 1;
+  float: right;
+}
+
+h6 p {
+  margin-top: 6px;
+  margin-bottom: 15px;
+  text-align: center;
+  font-weight: lighter;
+  font-size: 14px;
+  letter-spacing: 0.42px;
+  color: #ffffff;
+  opacity: 1;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+#show a {
+  font-size: 14px;
+  letter-spacing: 0.42px;
+  color: #ffffff;
+  opacity: 1;
+  text-decoration: none;
+}
+
+#hide {
+  background: #000000 no-repeat padding-box;
+  position: absolute;
+  margin-right: 0px;
+  margin-top: -567px;
+  height: 32px;
+  width: 108px;
+}
+
+#page-blank-wrapper {
+  padding-top: 130px;
+}
+
+/* 마우스 올려놨을 때 */
+
+h6 p:hover {
+  padding-top: 7px;
+  margin-top: -1px;
+  height: 85%;
+  color: #ffffff;
+  background: rgba(255, 255, 255, 0.5);
+}
+
+h6 p a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+h5:hover {
+  color: #ffffff;
+  background: rgba(255, 255, 255, 0.3);
+}
+
+[tabindex="-1"]:focus {
+  outline: 0 !important;
+}
+
+/*about me table*/
+.meTable {
+  margin-left: 135px;
+  width: 770px;
+}
+
+table,
+td {
+  padding-left: 5px;
+  padding-top: 10px;
+  padding-bottom: 15px;
+  font-weight: lighter;
+  color: #ffffff;
+}
+
+hr {
+  margin-left: 130px;
+  width: 770px;
+}
+
+/*pdf 스크롤*/
+/*
+.scrollable {
+  -webkit-overflow-scrolling: touch;
+}
+*/
+
+/*footer*/
+#footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  height: 60px;
+  background-color: #2b2b2b;
+  align-items: center;
+  font-size: 14.5px;
+  color: #ffffff90;
+  margin-right: 25px;
+}
+
+#footerContent {
+  min-width: 700px;
+  padding-left: 30px;
+  padding-right: 230px;
+  height: 60px;
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+}
+
+#cateTitle {
+  padding-right: 230px;
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+}
+
+#pj_footer {
+  display: flex;
+  position: fixed;
+  border-radius: 50px;
+  align-items: center;
+  justify-content: flex-end;
+  padding: 15px;
+  bottom: 80px;
+  width: 55px;
+  height: 50px;
+  right: 0;
+  margin-right: 40px;
+  background-color: #000000d0;
+  border-style: solid;
+  border-width: 1px;
+  border-color: #dfe1e570;
+}
+
+#pj_footer a {
+  text-decoration: none;
+  color: #ffffff;
+  text-align: center;
+  font-weight: bold;
+  font-size: 15px;
+}
+
+#pj_footer:hover {
+  background-color: #bdbdbdec;
+}

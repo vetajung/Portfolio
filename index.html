@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Home</title>
+    <link rel="stylesheet" href="css/bootstrap.css" />
+    <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function () {
+        $("#sidebar-wrapper").load("SideBar.html"); // 원하는 파일 경로를 삽입하면 된다
+        $("#footers").load("footer.html"); // 추가 인클루드를 원할 경우 이런식으로 추가하면 된다
+      });
+    </script>
+  </head>
+
+  <body>
+    <div id="page-wrapper">
+      <!-- 사이드바 -->
+      <div id="sidebar-wrapper"></div>
+      <!-- 본문 -->
+      <div id="page-content-wrapper" style="width: 100%;">
+        <div class="container-fluid">
+          <center>
+            <img
+              style="width: 230px; height: 240px; margin-bottom: 35px;"
+              src="images/logo_face.png"
+            />
+          </center>
+          <div id = "content">
+            <p>Jung's Portfolio</p>
+          </div>
+          <div id = "content">
+            <div style="letter-spacing: 2px; margin-top: -35px; color:powderblue">정은영의 포트폴리오</div>
+          </div>
+          <div id = "content2">
+            <button class ="project"><a href="about.html">About Me</a></button>
+            <button class ="project"><a href="UX.html">Project</a></button>
+          </div>
+        </br></br></br></br>
+        <div id="footers"></div>
+        </div>
+      </div>
+      <div id="page-content-wrapper" style="width: 100%;"></div>
+      <!-- /본문 -->
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.js"></script>
+  </body>
+</html>

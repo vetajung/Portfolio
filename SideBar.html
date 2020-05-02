@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>SideBar</title>
+    <link rel="stylesheet" href="css/bootstrap.css" />
+    <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+  </head>
+
+  <body>
+    <ul class="sidebar-nav">
+      <div class="container-fluid">
+        <li class="sidebar-brand">
+          <a href="index.html">
+            <img
+              style="width: 117px; height: 31px;"
+              src="images/logo_jung.png"
+            />
+          </a>
+        </li>
+        <dl><dt><a href="about.html">About</a></dt><dl>
+        <dl>
+          <dt onclick = "this.nextSibling.nextSibling.style.display=(this.nextSibling.nextSibling.style.display=='none')?'block':'none';" href="javascript:void(0)"><a>Project</a></dt>
+            <div style="display: none;"><dd><a href="ux.html">UX/UI</a></dd>
+              <dd><a href="data.html">Data</a></dd></div>
+          </dl>
+        <dl><dt><a href="lecture.html">Lecture</a></dt></dl>
+        <dl><dt><a href="publication.html">Publication</a></dt></dl>
+      </div>
+    </ul>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.js"></script>
+  </body>
+</html>

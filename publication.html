@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <!--tag 가능 추가하기-->
+  <head>
+    <meta charset="UTF-8" />
+    <title>Publication</title>
+    <link rel="stylesheet" href="css/bootstrap.css" />
+    <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function () {
+        $("#sidebar-wrapper").load("SideBar.html"); // 원하는 파일 경로를 삽입하면 된다
+        $("#footers").load("footer.html"); // 추가 인클루드를 원할 경우 이런식으로 추가하면 된다
+      });
+
+      function Show() {
+        document.getElementById("pdfview").style.display = "block";
+        document.getElementById("show").style.display = "none";
+        document.getElementById("hide").style.display = "block";
+      }
+      function hide() {
+        document.getElementById("pdfview").style.display = "none";
+        document.getElementById("show").style.display = "block";
+        document.getElementById("hide").style.display = "none";
+      }
+    </script>
+  </head>
+
+  <body>
+    <div id="page-wrapper">
+      <!-- 사이드바 -->
+      <div id="sidebar-wrapper"></div>
+      <div id="page-content-wrapper"></div>
+      <!-- 본문 -->
+      <div id="page-content-wrapper2">
+        <h1>Publication</h1>
+        <div id="text-content-wrapper" style="padding-top: 8px;">
+          <div class="container-fluid">
+            <div><div class="project-content"></div> <img class= "page-image" src="publication/01_hanul.jpg"></img><div id="text-content">
+              <h3>대한민국 수험사전 [기획/집필/홍보]</h3>
+              <h4>2015.03 ~ 2016.12</h4>
+              <h4>
+              출판 프로젝트 팀 ‘한울’ 을 구성하여 입시생의 질문을 받아 컨텐츠를 구성하고, 출판사와 계약하여 집필 및 편집을 팀 구성원 전체가 자체적으로 수행. 출판 후 출판사 내부사정으로 홍보를 진행하지 못한다는 통보를 받고, 블로그 글 작성/Q&A 멘토링/Youtube ‘연고티비’ 채널 출연을 통해 직접 홍보. 관련 영상 최고 조회수 50만회,6개월 이내 약 700권 판매량 달성.
+              </h4><h5>
+                <p>
+                    <a href="http://www.yes24.com/Product/Goods/29318979" target="_blank">
+                      관련링크
+                    </a>
+                </p>
+              </h5><h6 id="show">
+              <p><a href="publication/01_hanul.pdf" target="_blank">pdf 보기</a></p>
+          </h6><div id="page-blank-wrapper"></div></div></br></br></br></br></br>
+            <div id="page-content-wrapper"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+      <!-- /본문 -->
+      <div id="footers"></div>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.js"></script>
+  </body>
+</html>

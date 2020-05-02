@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <!--tag 가능 추가하기-->
+  <head>
+    <meta charset="UTF-8" />
+    <title>About
+    </title>
+    <link rel="stylesheet" href="css/bootstrap.css" />
+    <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function () {
+        $("#sidebar-wrapper").load("SideBar.html"); // 원하는 파일 경로를 삽입하면 된다
+        $("#footers").load("footer.html"); // 추가 인클루드를 원할 경우 이런식으로 추가하면 된다
+      });
+
+      function Show() {
+        document.getElementById("pdfview").style.display = "block";
+        document.getElementById("show").style.display = "none";
+        document.getElementById("hide").style.display = "block";
+      }
+      function hide() {
+        document.getElementById("pdfview").style.display = "none";
+        document.getElementById("show").style.display = "block";
+        document.getElementById("hide").style.display = "none";
+      }
+    </script>
+  </head>
+
+  <body>
+    <div id="page-wrapper">
+      <!-- 사이드바 -->
+      <div id="sidebar-wrapper"></div>
+      <div id="page-content-wrapper"></div>
+      <!-- 본문 -->
+      <div id="page-content-wrapper2">
+        <h1>About Me</h1>
+        <div id="text-content-wrapper" style="padding-top: 8px;">
+          <div class="container-fluid">
+            <div><div class="project-content"></div>
+            <img class= "page-image" style = "width: 35%;" src="about/me.JPG"></img>
+            <div id="text-content" style="margin-left: -40px;">
+              <h3>정은영</h3>
+              <h4 style="font-size: 14px; color:#dbdbdb;">"Data" 기반 "UX & 서비스 기획자"</h4>
+              <h4 style=" width: 35%">
+                낭만은 감각이 만족될 때 온다고 생각합니다. </br>
+                사람들의 낭만이 실현될 수 있도록, 데이터로 각각의 감각을 찾아 서비스와 연결하고자 합니다.
+              </h4>
+            </div>
+          </div>
+        </div>
+      </div>
+      </br></br></br>
+      <div class="container-fluid">
+        <h1 style="font-size: 20px; padding-top :100px;">Education</h1><hr size="0.1px"><table class = "meTable"><th></th><th></th><colgroup><col width = "75%"><col width = "25%"></colgroup><tr>
+          <td>수리고등학교(경기)</td>
+          <td>2012.03 ~ 2015.02</td>
+      </tr><tr>
+          <td>고려대학교 건축사회환경공학부(서울)</td>
+          <td>2015.03 ~ 2020.08</td>
+      </tr><tr>
+          <td>고려대학교 산업경영공학부(서울)</td>
+          <td>2015.03 ~ 2020.08</td>
+      </tr></table></br></br></br></br><h1 style="font-size: 20px; padding-top :100px;">Experience</h1><hr size="0.1px"><table class = "meTable"><th></th><th></th><colgroup><col width = "75%"><col width = "25%"></colgroup><tr>
+          <td>대학생 영어 타임지 동아리 어바웃타임</td>
+          <td>2015.1 ~ 2016.5</td>
+      </tr><tr>
+          <td>대학생 출판 프로젝트팀 한울</td>
+          <td>2015.5~2016.12</td>
+      </tr><tr>
+          <td>KUDT (Korea University Dance Team)</td>
+          <td>2016.03 ~ 2016.12</td>
+      </tr><tr>
+          <td>IT리더십 애플 앱개발 특강(120시간,정보대학 시행)</td>
+          <td>2017.7.10~2017.8.22</td>
+      </tr><tr>
+          <td>빅데이터 소셜마케팅 챌린저과정(200시간, 고용노동부)</td>
+          <td>2017.12.27~2018.1.31</td>
+      </tr><tr>
+          <td>빅데이터 마이닝 워크숍(공학교육혁신센터)</td>
+          <td>2018.7.30~2018.8.1</td>
+      </tr><tr>
+          <td>스마트팩토리 워크숍(공학교육혁신센터)</td>
+          <td>2018.7.23~2018.7.25</td>
+      </tr><tr>
+          <td>AI기반 사물인터넷 워크숍(공학교육혁신센터)</td>
+          <td>2018.8.6~2018.8.9</td>
+      </tr><tr>
+          <td>Fusion Full class Summer school (Autodesk Fusion360)</td>
+          <td>2018.08.09</td>
+      </tr><tr>
+          <td>KUCC (Korea University Computer Club)</td>
+          <td>2019.03 ~ 2020.08</td>
+      </tr></table></br></br></br></br><h1 style="font-size: 20px; padding-top :100px;">Award</h1><hr size="0.1px"><table class = "meTable"><th></th><th></th><colgroup><col width = "75%"><col width = "25%"></colgroup><tr>
+          <td>빅데이터 분석보고서 경진대회 우수상(한국경제신문 주최)</td>
+          <td>2018.1.31 </td>
+      </tr></table></br></br></br></br>
+      </div>
+      <!-- /본문 -->
+      <div id="page-content-wrapper"></div>
+      <div id="pj_footer"><a href="ux.html">Project 보기</a></div>
+      <div id="footers"></div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.js"></script>
+  </body>
+</html>
